@@ -85,18 +85,18 @@ export default function game() {
 
         k.play("Hurt", { volume: 0.5 });
     k.setData("current-score", score);
-    k.go("gameover", citySfx); 
+    k.go("game-over", citySfx); 
     });
     //gameSpeed variable
-    let gameSpeed = 300;
+    let gameSpeed = 200;
     k.loop(1, () => {
-        gameSpeed += 50;
+        gameSpeed += 40;
     });
     const spawnMotoBug = () => {
         const motobug = makeMotobug(k.vec2(1950, 773));
         motobug.onUpdate(() => {
           if (gameSpeed < 3000) {
-            motobug.move(-(gameSpeed + 300), 0);
+            motobug.move(-(gameSpeed + 100), 0);
             return;
           }
           motobug.move(-gameSpeed, 0);
