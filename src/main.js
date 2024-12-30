@@ -6,9 +6,9 @@ import mainMenu from "./scenes/mainMenu";
 
 
 //import assets
-k.loadSprite("chemical-bg", "/graphics/chemical-bg.png");
-k.loadSprite("platforms", " /graphics/platforms.png");
-k.loadSprite("sonic", " /graphics/sonic.png", {
+k.loadSprite("chemical-bg", "graphics/chemical-bg.png");
+k.loadSprite("platforms", " graphics/platforms.png");
+k.loadSprite("sonic", " graphics/sonic.png", {
     sliceX: 8,
     sliceY: 2,
     anims: {
@@ -17,7 +17,7 @@ k.loadSprite("sonic", " /graphics/sonic.png", {
     },
 });
 
-k.loadSprite("ring", "/graphics/ring.png",{
+k.loadSprite("ring", "graphics/ring.png",{
     sliceX: 16,
     sliceY: 1,
     anims: {
@@ -25,7 +25,7 @@ k.loadSprite("ring", "/graphics/ring.png",{
     },
 });
 
-k.loadSprite("motobug", "/graphics/motobug.png", {
+k.loadSprite("motobug", "graphics/motobug.png", {
     sliceX: 5,
     sliceY: 1,
     anims: {
@@ -33,14 +33,14 @@ k.loadSprite("motobug", "/graphics/motobug.png", {
     },
 });
 
-k.loadFont("mania", "/fonts/mania.ttf");
+k.loadFont("mania", "fonts/mania.ttf");
 
-k.loadSound("city", "/sounds/city.mp3");
-k.loadSound("destroy", "/sounds/Destroy.wav");
-k.loadSound("Hurt", "/sounds/Hurt.wav");
-k.loadSound("HyperRing", "/sounds/HyperRing.wav");
-k.loadSound("Jump", "/sounds/jump.wav");
-k.loadSound("Ring", "/sounds/Ring.wav");
+k.loadSound("city", "sounds/city.mp3");
+k.loadSound("destroy", "sounds/Destroy.wav");
+k.loadSound("Hurt", "sounds/Hurt.wav");
+k.loadSound("HyperRing", "sounds/HyperRing.wav");
+k.loadSound("Jump", "sounds/jump.wav");
+k.loadSound("Ring", "sounds/Ring.wav");
 
 //define Scenes
 k.scene("disclaimer", disclaimer);
